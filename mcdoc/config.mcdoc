@@ -1,4 +1,17 @@
 
 dispatch minecraft:storage[xpplate:config] to struct Config {
-
+    sounds: struct SoundsConfig {
+        threshold_indicator: boolean,
+        step_on_off: boolean,
+        transfer: boolean,
+    },
+    particles: struct ParticlesConfig {
+        threshold_indicator: boolean,
+        spiral: boolean,
+        glitter: boolean,
+    },
+    transfer_rates: [struct TransferRateSegment {
+        threshold_size: int @ 1..90,
+        rate: int @ 0..
+    }] @ 1..
 }
