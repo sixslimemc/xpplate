@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[xpplate:config] to struct Config {
+
+}

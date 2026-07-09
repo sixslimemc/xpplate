@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[xpplate:in] to struct In {
+
+}
+
+dispatch minecraft:storage[xpplate:out] to struct Out {
+
+}

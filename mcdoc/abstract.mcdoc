@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[xpplate:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[xpplate:abstract/out] to struct AbstractOut {
+
+}
