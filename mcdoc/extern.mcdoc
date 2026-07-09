@@ -1,4 +1,5 @@
 
 dispatch mcdoc:custom_data["xpplate"] to struct CustomData {
-    
+    // only for marker data
+    destroy_loot: [::java::world::item::ItemStack]
 }

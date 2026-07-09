@@ -2,6 +2,7 @@
 # @ LOAD
 
 scoreboard objectives add _xpplate dummy
+scoreboard objectives add xpplate.stored_xp dummy
 
 # DECLARE TAGS:
 # .xp_plate
