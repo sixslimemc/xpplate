@@ -4,10 +4,11 @@ dispatch minecraft:storage[xpplate:config] to struct Config {
         threshold_indicator: boolean,
         step_on_off: boolean,
         transfer: boolean,
+        create: boolean,
     },
     particles: struct ParticlesConfig {
         threshold_indicator: boolean,
-        spiral: boolean,
+        transfer_spiral: boolean,
         glitter: boolean,
     },
     transfer_rates: [struct TransferRateSegment {
