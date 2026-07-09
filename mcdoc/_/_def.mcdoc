@@ -20,7 +20,8 @@ dispatch minecraft:storage[xpplate:_] to struct {
     // constants
     const: struct Constants {
         
-    }
+    },
+    config: super::super::config::Config
 }
 dispatch minecraft:storage[xpplate:_/in] to struct {
     [any]: any
