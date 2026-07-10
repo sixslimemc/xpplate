@@ -2,7 +2,8 @@
 #--------------------
 # ../run_user
 #--------------------
-scoreboard players set *active.valid_user _xpplate 1
+execute if entity @s[distance=..0.6, predicate=xpplate:_/valid_user] run scoreboard players set *active.valid_user _xpplate 1
+execute if score *active.valid_user _xpplate matches 0 run return 0
 
 execute store success score *active.using _xpplate if predicate xpplate:_/sneak
 
