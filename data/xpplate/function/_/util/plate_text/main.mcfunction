@@ -35,7 +35,7 @@ execute if score *plate_text.segments _xpplate matches 1.. run function xpplate:
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.left merge value {color:yellow, bold:true}
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.right merge value {color:yellow, bold:true}
 execute if score *plate_text.is_activated _xpplate matches 1 if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {color:red}
-execute if score *plate_text.is_activated _xpplate matches 1 if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {color:green}
+execute if score *plate_text.is_activated _xpplate matches 1 if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.center merge value {color:green}
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.blanks.color set value dark_aqua
 
 function xpplate:_/util/plate_text/construct
