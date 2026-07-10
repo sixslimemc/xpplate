@@ -1,6 +1,8 @@
 #> xpplate :_/util/ take_xp
 # main.1
 
+execute if score *take_xp.amount _xpplate matches ..0 run return 0
+
 execute store result score *take_xp.ppoints _xpplate run xp query @s points
 
 # points > amount needed:
