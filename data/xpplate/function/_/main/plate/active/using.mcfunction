@@ -22,9 +22,5 @@ title @s actionbar {storage:"xpplate:_/out", nbt:"plate_text.result", interpret:
 
 
 
-
-# if using:
-execute if score *active.using _xpplate matches 1 run function xpplate:_/main/plate/active/using
-
 data remove storage xpplate:_ t.active
 scoreboard players reset *active.using _xpplate
