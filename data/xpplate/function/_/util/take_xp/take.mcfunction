@@ -4,5 +4,5 @@
 # ./main
 #--------------------
 
-say $(amount)
+$say $(amount)
 $xp add @s -$(amount) points
