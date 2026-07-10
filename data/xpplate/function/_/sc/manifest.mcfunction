@@ -17,7 +17,7 @@ data modify storage slimecore:in manifest.pack.display.links.info set value "htt
 data modify storage slimecore:in manifest.pack.display.links.versions set value "https://github.com/sixslimemc/xpplate/releases"
 
 data modify storage slimecore:in manifest.pack.entrypoints set value []
-data modify storage slimecore:in manifest.pack.entrypoints append value {id:"main"}
+data modify storage slimecore:in manifest.pack.entrypoints append value {id:"main", after:[{pack_ref:"floormake",id:"main"}]}
 # data modify storage slimecore:in manifest.pack.entrypoints append value {id:"ID", before:[{pack_ref:"PACK", id:"ID"}]}
 
 data modify storage slimecore:in manifest.pack.preload_entrypoints set value []

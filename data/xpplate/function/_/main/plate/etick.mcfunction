@@ -1,8 +1,11 @@
-#> xpplate:_/main/plate/main
+#> xpplate:_/main/plate/etick
 #--------------------
 # _/main/tick
 #--------------------
 
-execute unless block ~ ~ ~ minecraft:light_weighted_pressure_plate run return run function xpplate:_/main/plate/destory/do
+execute unless block ~ ~ ~ minecraft:light_weighted_pressure_plate run return run function xpplate:_/main/plate/destroy/do
 
-execute unless block ~ ~ ~ minecraft:light_weighted_pressure_plate[power=0] if entity @p[gamemode=!spectator, distance=..0.85, predicate=xpplate:_/on_ground] run function xpplate:_/main/plate/active/trigger
+setblock ~ ~ ~ minecraft:light_weighted_pressure_plate[power=1]
+
+execute if entity @s[tag=xpplate.in_use] run return run function xpplate:_/main/plate/active/etick
+return run function xpplate:_/main/plate/inactive/etick

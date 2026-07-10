@@ -1,0 +1,39 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"minecraft:flags": {
+					"is_on_ground": true
+				}
+			}
+		},
+		{
+			"condition": "minecraft:inverted",
+			"term": {
+				"condition": "minecraft:entity_properties",
+				"entity": "this",
+				"predicate": {
+					"minecraft:type_specific/player": {
+						"gamemode": [
+							"spectator"
+						]
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"minecraft:entity_tags": {
+					"none_of": [
+						"xpplate.ignore"
+					]
+				}
+			}
+		}
+	]
+}

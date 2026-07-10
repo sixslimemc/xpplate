@@ -1,5 +1,11 @@
+use super::def::Uuid
+use super::def::Guuid
 
 dispatch mcdoc:custom_data["xpplate"] to struct CustomData {
     // only for marker data
-    destroy_loot: [::java::world::item::ItemStack]
+    destroy_loot: [::java::world::item::ItemStack],
+    user?: struct {
+        uuid: Uuid,
+        guuid: Guuid,
+    }
 }
