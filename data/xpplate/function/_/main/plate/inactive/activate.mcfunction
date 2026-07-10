@@ -3,7 +3,7 @@
 # ./etick
 #--------------------
 
-data modify storage xpplate:_ x.uuid set from entity @p[tag=_xpplate.user] UUID
+data modify storage xpplate:_ x.uuid set from entity @p[tag=_xpplate.user_init] UUID
 
 data modify entity @s data.xpplate.user.uuid set from storage xpplate:_ x.uuid
 
@@ -14,6 +14,7 @@ data modify entity @s data.xpplate.user.guuid set from storage six:out guuid.res
 # TODO: sfx
 execute if score *config.sounds.step _xpplate matches 1 run playsound block.metal_pressure_plate.click_on block @a ~ ~ ~ 0.6 1.5
 
-tag @p[tag=_xpplate.user] remove _xpplate.user
+tag @p[tag=_xpplate.user_init] add _xpplate.user
+tag @p[tag=_xpplate.user_init] remove _xpplate.user_init
 tag @s add xpplate.in_use
 

@@ -3,6 +3,7 @@
 # ./etick
 #--------------------
 
+$execute as $(guuid) at @s run function xpplate:_/main/plate/active/user/deactivate
 data remove entity @s data.xpplate.user
 tag @s remove xpplate.in_use
 
