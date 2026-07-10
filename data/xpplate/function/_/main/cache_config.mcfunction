@@ -12,4 +12,6 @@ execute store success score *config.sounds.transfer _xpplate if data storage xpp
 execute store success score *config.sounds.create _xpplate if data storage xpplate:config sounds{create:true}
 execute store success score *config.sounds.threshold_indicator _xpplate if data storage xpplate:config sounds{threshold_indicator:true}
 
+execute store result score *config.transfer_rates.count _xpplate if data storage xpplate:config transfer_rates[]
+
 data modify storage xpplate:_ config set from storage xpplate:config

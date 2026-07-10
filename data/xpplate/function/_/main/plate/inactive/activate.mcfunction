@@ -12,7 +12,7 @@ function six:uuid/guuid
 data modify entity @s data.xpplate.user.guuid set from storage six:out guuid.result
 
 # TODO: sfx
-execute if score *config.sounds.step _xpplate matches 1 run playsound block.metal_pressure_plate.click_on block @a ~ ~ ~ 0.6 1.3
+execute if score *config.sounds.step _xpplate matches 1 run playsound block.metal_pressure_plate.click_on block @a ~ ~ ~ 0.6 1.5
 
 tag @p[tag=_xpplate.user] remove _xpplate.user
 tag @s add xpplate.in_use
