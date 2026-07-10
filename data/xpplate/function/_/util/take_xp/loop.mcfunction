@@ -14,7 +14,7 @@ execute if score *take_xp.plevels _xpplate matches ..0 run return run scoreboard
 # ~ levels left to take, but not enough points:
 
 scoreboard players operation *x _xpplate = *take_xp.ppoints _xpplate
-scoreboard players add *x _xpplate 1
+# scoreboard players add *x _xpplate 1
 scoreboard players operation *take_xp.taking _xpplate += *x _xpplate
 scoreboard players operation *take_xp.amount _xpplate -= *x _xpplate
 scoreboard players operation *take_xp.loop_took _xpplate += *x _xpplate
