@@ -17,6 +17,4 @@ execute store success storage xpplate:_/in plate_text.activated byte 1 run score
 data modify storage xpplate:_/in plate_text.segment_index set from storage xpplate:_ t.active.calc.segment_index
 function xpplate:_/util/plate_text/main
 
-# DEBUG:
-tellraw @a ["TEXT: ", {'storage':'xpplate:_/out', 'nbt':'plate_text'}]
 title @s actionbar {storage:"xpplate:_/out", nbt:"plate_text.result", interpret:true}
