@@ -33,6 +33,8 @@ execute if score *plate_text.segments _xpplate matches 1.. run function xpplate:
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.left.color set value green
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.right.color set value green
 
+# DEBUG:
+tellraw @a ["VAR: ", {'storage':'xpplate:_', 'nbt':'u.plate_text'}]
 function xpplate:_/util/plate_text/construct with storage xpplate:_ u.plate_text
 
 data remove storage xpplate:_ u.plate_text
