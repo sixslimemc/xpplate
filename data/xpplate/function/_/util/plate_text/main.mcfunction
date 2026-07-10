@@ -28,7 +28,7 @@ data modify storage xpplate:_ u.plate_text.right set value {text:"", color:gray,
 data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow, plain:true}
 
 # DEV: looks better without blanks
-# execute if score *plate_text.blanks _xpplate matches 1.. run function xpplate:_/util/plate_text/blanks
+execute if score *plate_text.blanks _xpplate matches 1.. run function xpplate:_/util/plate_text/blanks
 
 execute if score *plate_text.segments _xpplate matches 1.. run function xpplate:_/util/plate_text/segments
 
