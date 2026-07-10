@@ -15,6 +15,7 @@ scoreboard players operation *x _xpplate = *take_xp.ppoints _xpplate
 scoreboard players add *x _xpplate 1
 scoreboard players operation *take_xp.taking _xpplate += *x _xpplate
 scoreboard players operation *take_xp.amount _xpplate -= *x _xpplate
+scoreboard players operation *take_xp.loop_took _xpplate += *x _xpplate
 
 execute store result storage xpplate:_ x.macro.amount int 1 run scoreboard players get *x _xpplate
 function xpplate:_/util/take_xp/take with storage xpplate:_ x.macro
