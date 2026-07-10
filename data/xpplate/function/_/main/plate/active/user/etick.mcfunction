@@ -10,6 +10,8 @@ execute store success score *active.using _xpplate if predicate xpplate:_/sneak
 # rate calc:
 data modify storage xpplate:_/in rate_calc.y_rot set from entity @s Rotation[1]
 function xpplate:_/util/rate_calc/main
+# DEBUG:
+tellraw @a ["RATE: ", {'storage':'xpplate:_/out', 'nbt':'rate_calc'}]
 execute store result score *active.rate _xpplate run data get storage xpplate:_/out rate_calc.rate
 execute store result score *active.segment_index _xpplate run data get storage xpplate:_/out rate_calc.segment_index
 
