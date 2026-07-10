@@ -4,6 +4,8 @@
 # ./each
 #--------------------
 
+execute if score *rate_calc.is_negative _xpplate matches 1 run scoreboard players add *rate_calc.index _xpplate 1
+
 execute if score *rate_calc.is_negative _xpplate matches 0 store result storage xpplate:_/out rate_calc.segment_index int 1 run scoreboard players get *rate_calc.index _xpplate
 execute if score *rate_calc.is_negative _xpplate matches 1 store result storage xpplate:_/out rate_calc.segment_index int -1 run scoreboard players get *rate_calc.index _xpplate
 
