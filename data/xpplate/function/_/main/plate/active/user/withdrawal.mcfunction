@@ -9,7 +9,9 @@ execute if score *config.sounds.transfer _xpplate matches 1 run playsound entity
 execute if score *active.stored_xp _xpplate matches ..0 run return 0
 
 # clamp *x to *.stored_xp
+scoreboard players set *y _xpplate -1
 scoreboard players operation *x _xpplate = *active.rate _xpplate
+scoreboard players operation *x _xpplate *= *y _xpplate
 execute if score *x _xpplate > *active.stored_xp _xpplate run scoreboard players operation *x _xpplate = *active.stored_xp _xpplate
 
 scoreboard players operation *active.stored_xp _xpplate -= *x _xpplate
