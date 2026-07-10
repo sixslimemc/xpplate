@@ -25,7 +25,7 @@ scoreboard players operation *plate_text.blanks _xpplate -= *plate_text.segments
 data modify storage xpplate:_ u.plate_text.blanks set value {text:"", color:dark_gray, extra:[]}
 data modify storage xpplate:_ u.plate_text.left set value {text:"", color:gray, extra:[]}
 data modify storage xpplate:_ u.plate_text.right set value {text:"", color:gray, extra:[]}
-data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow}
+data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow, plain:true}
 
 execute if score *plate_text.blanks _xpplate matches 1.. run function xpplate:_/util/plate_text/blanks
 execute if score *plate_text.segments _xpplate matches 1.. run function xpplate:_/util/plate_text/segments
