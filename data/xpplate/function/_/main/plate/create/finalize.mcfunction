@@ -5,6 +5,7 @@
 #--------------------
 tag @s remove _xpplate.xp_plate_init
 tag @s add xpplate.xp_plate
+scoreboard players set @s xpplate.stored_xp 0
 
 # TODO: placeholder sound
 execute if score *config.sounds.create _xpplate matches 1 run playsound entity.horse.saddle block @a ~ ~ ~ 0.6 1.8

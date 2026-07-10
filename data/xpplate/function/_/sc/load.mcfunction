@@ -6,6 +6,7 @@ scoreboard objectives add xpplate.stored_xp dummy
 
 # DECLARE TAGS:
 # .xp_plate
+# .ignore
 
 # DEBUG
 scoreboard players reset *init _xpplate
