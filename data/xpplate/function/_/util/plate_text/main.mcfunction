@@ -18,7 +18,7 @@ execute store result score *plate_text.segments _xpplate run data get storage xp
 execute store success score *plate_text.is_negative _xpplate if score *plate_text.segments _xpplate matches ..-1
 scoreboard players set *x _xpplate -1
 execute if score *plate_text.is_negative _xpplate matches 1 run scoreboard players operation *plate_text.segments _xpplate *= *x _xpplate
-execute if score *plate_text.is_negative _xpplate matches 0 run scoreboard players add *plate_text.segments _xpplate 2
+execute if score *plate_text.is_negative _xpplate matches 0 run scoreboard players add *plate_text.segments _xpplate 0
 scoreboard players operation *plate_text.blanks _xpplate = *config.transfer_rates.count _xpplate
 scoreboard players operation *plate_text.blanks _xpplate -= *plate_text.segments _xpplate
 
