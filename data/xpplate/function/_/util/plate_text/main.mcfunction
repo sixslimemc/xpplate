@@ -11,8 +11,6 @@
 # 1.
 #--------------------
 
-# DEBUG:
-tellraw @a ["INDEX: ", {'storage':'xpplate:_/in', 'nbt':'plate_text.segment_index'}]
 data modify storage xpplate:_/out plate_text set value {result:{}}
 
 execute store success score *plate_text.is_activated _xpplate if data storage xpplate:_/in plate_text{activated:true}
