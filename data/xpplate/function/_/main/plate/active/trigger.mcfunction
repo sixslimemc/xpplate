@@ -1,5 +1,5 @@
 #> xpplate:_/main/plate/active/trigger
 #--------------------
-# ../main
+# ../etick
 #--------------------
 say hi
