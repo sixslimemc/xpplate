@@ -22,7 +22,7 @@ execute if score *plate_text.is_negative _xpplate matches 0 run scoreboard playe
 scoreboard players operation *plate_text.blanks _xpplate = *config.transfer_rates.count _xpplate
 scoreboard players operation *plate_text.blanks _xpplate -= *plate_text.segments _xpplate
 
-data modify storage xpplate:_ u.plate_text.blanks set value {text:"", color:dark_gray, extra:[]}
+data modify storage xpplate:_ u.plate_text.blanks set value {text:"", color:dark_gray, extra:[""]}
 data modify storage xpplate:_ u.plate_text.left set value {text:"", color:gold, extra:[]}
 data modify storage xpplate:_ u.plate_text.right set value {text:"", color:gold, extra:[]}
 data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow, plain:true}
@@ -34,7 +34,7 @@ execute if score *plate_text.segments _xpplate matches 1.. run function xpplate:
 
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.left merge value {color:yellow, bold:true}
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.right merge value {color:yellow, bold:true}
-execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {italicized:true}
+execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {italic:true}
 execute if score *plate_text.is_activated _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.blanks.color set value dark_aqua
 
 function xpplate:_/util/plate_text/construct
