@@ -11,6 +11,7 @@
 
 scoreboard players set *take_xp.taking _xpplate 0
 execute store result score *take_xp.plevels _xpplate run xp query @s levels
+execute store result score *take_xp.amount _xpplate run data get storage xpplate:_/in take_xp.amount
 function xpplate:_/util/take_xp/loop
 
 
