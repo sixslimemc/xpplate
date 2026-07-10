@@ -18,7 +18,9 @@ function xpplate:_/util/take_xp/loop
 scoreboard players operation *x _xpplate = *take_xp.taking _xpplate
 scoreboard players operation *x _xpplate -= *take_xp.loop_took _xpplate
 execute store result storage xpplate:_ x.macro.amount int 1 run scoreboard players get *x _xpplate
-execute store result score *x _xpplate run function xpplate:_/util/take_xp/take with storage xpplate:_ x.macro
+execute if score *x _xpplate matches 1.. run function xpplate:_/util/take_xp/take with storage xpplate:_ x.macro
+
+scoreboard players operation *x _xpplate = take_xp.taking _xpplate
 
 data remove storage xpplate:_ u.take_xp
 data remove storage xpplate:_/in take_xp
