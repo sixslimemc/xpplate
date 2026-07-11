@@ -10,4 +10,4 @@ execute if score *x _xpplate matches ..0 run return 0
 
 scoreboard players operation *active.xp_transfer _xpplate += *x _xpplate
 
-execute if score *config.sounds.transfer _xpplate matches 1 run playsound entity.allay.ambient_with_item block @a ~ ~ ~ 0.08 2
+execute if score *config.sounds.transfer _xpplate matches 1 run playsound entity.allay.ambient_without_item block @a ~ ~ ~ 0.03 2
