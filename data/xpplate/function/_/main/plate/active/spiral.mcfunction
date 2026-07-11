@@ -3,7 +3,7 @@
 # ./etick
 #--------------------
 
-tp @s ~ ~ ~ ~2 ~
+tp @s ~ ~ ~ ~8 ~
 
-particle instant_effect ^ ^ ^0.5 0 0 0 0 1 normal
-particle instant_effect ^ ^ ^-0.5 0 0 0 0 1 normal
+particle instant_effect ^ ^ ^0.7 0 0 0 0 1 normal
+particle instant_effect ^ ^ ^-0.7 0 0 0 0 1 normal
