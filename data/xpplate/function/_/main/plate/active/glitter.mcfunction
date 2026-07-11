@@ -2,8 +2,8 @@
 #--------------------
 # ./etick
 #--------------------
-execute unless score @s _xpplate.glitter_timer matches 5.. run return 0
+execute unless score @s _xpplate.glitter_timer matches 3.. run return 0
 
 scoreboard players set @s _xpplate.glitter_timer 0
 
-particle instant_effect ~ ~0.03 ~ 0.15 0 0.15 0 1 normal
+particle composter ~ ~0.02 ~ 0.2 0.01 0.2 1 2 normal
