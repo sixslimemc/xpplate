@@ -9,8 +9,8 @@ scoreboard players operation *x _xpplate *= *y _xpplate
 execute store result storage xpplate:_ x.macro.rotate int 1 run scoreboard players get *x _xpplate
 function xpplate:_/main/plate/active/tp_rotate with storage xpplate:_ x.macro
 
-particle instant_effect ^ ^0.02 ^0.3 0 0 0 0 1 normal
-particle instant_effect ^ ^0.02 ^-0.3 0 0 0 0 1 normal
-particle instant_effect{color:16777130} ^ ^0.02 ^0.55 0 0 0 0 1 normal
-particle instant_effect{color:16777130} ^ ^0.02 ^0.55 0 0 0 0 1 normal
+particle instant_effect ^0.5 ^0.02 ^ 0 0 0 0 1 normal
+particle instant_effect ^-0.5 ^0.02 ^ 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^0.64 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^0.64 0 0 0 0 1 normal
 
