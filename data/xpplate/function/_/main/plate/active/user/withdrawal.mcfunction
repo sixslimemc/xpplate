@@ -5,6 +5,8 @@
 
 execute if score *active.stored_xp _xpplate matches ..0 run return 0
 
+execute if score *config.sounds.transfer _xpplate matches 1 run playsound entity.allay.ambient_without_item block @a ~ ~ ~ 0.08 2
+
 # clamp *x to *.stored_xp
 scoreboard players set *y _xpplate -1
 scoreboard players operation *x _xpplate = *active.rate _xpplate
