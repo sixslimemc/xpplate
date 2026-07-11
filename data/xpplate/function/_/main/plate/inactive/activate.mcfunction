@@ -13,7 +13,7 @@ data modify entity @s data.xpplate.user.guuid set from storage six:out guuid.res
 
 execute if score *config.sounds.step _xpplate matches 1 run playsound block.beacon.activate block @a ~ ~ ~ 0.3 2
 
-execute if score *config.particles.glitter _xpplate matches 1 run particle instant_effect ~ ~0.03 ~ 0.1 0 0.1 0 15 normal
+execute if score *config.particles.glitter _xpplate matches 1 run particle instant_effect ~ ~0.03 ~ 0.1 0 0.1 0.05 15 normal
 
 tag @p[tag=_xpplate.user_init] add _xpplate.user
 tag @p[tag=_xpplate.user_init] remove _xpplate.user_init
