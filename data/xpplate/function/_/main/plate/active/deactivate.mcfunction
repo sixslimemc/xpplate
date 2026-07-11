@@ -7,5 +7,4 @@ $execute as $(guuid) at @s run function xpplate:_/main/plate/active/user/deactiv
 data remove entity @s data.xpplate.user
 tag @s remove xpplate.in_use
 
-execute if score *config.sounds.step _xpplate matches 1 run playsound block.metal_pressure_plate.click_off block @a ~ ~ ~ 0.3 1.8
-execute if score *config.sounds.step _xpplate matches 1 run playsound block.beacon.deactivate block @a ~ ~ ~ 0.3 1.8
+execute if score *config.sounds.step _xpplate matches 1 run playsound block.beacon.deactivate block @a ~ ~ ~ 0.3 2
