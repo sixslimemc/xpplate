@@ -2,7 +2,7 @@
 #--------------------
 # ./etick
 #--------------------
-execute unless score @s _xpplate.glitter_timer matches 8.. run return 0
+execute unless score @s _xpplate.glitter_timer matches 10.. run return 0
 
 scoreboard players set @s _xpplate.glitter_timer 0
 
