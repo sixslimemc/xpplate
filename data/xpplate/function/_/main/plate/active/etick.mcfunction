@@ -10,6 +10,8 @@ execute if score *active.valid_user _xpplate matches 0 run return run function x
 
 scoreboard players operation @s xpplate.stored_xp = *active.stored_xp _xpplate
 
+execute if score *config.particles.glitter _xpplate matches 1 run function xpplate:_/main/plate/active/glitter
+
 data remove storage xpplate:_ t.active
 scoreboard players reset *active.using _xpplate
 scoreboard players reset *active.valid_user _xpplate
