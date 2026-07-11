@@ -3,3 +3,5 @@
 # ../deactivate
 #--------------------
 tag @s remove _xpplate.user
+
+title @s actionbar ""
