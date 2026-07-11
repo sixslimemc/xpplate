@@ -11,4 +11,6 @@ function xpplate:_/main/plate/active/tp_rotate with storage xpplate:_ x.macro
 
 particle instant_effect{color:13426175} ^ ^0.02 ^0.55 0 0 0 0 1 normal
 particle instant_effect{color:13426175} ^ ^0.02 ^-0.55 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^0.55 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^0.55 0 0 0 0 1 normal
 
