@@ -3,9 +3,6 @@
 # ./using
 #--------------------
 
-# TODO: sfx
-execute if score *config.sounds.transfer _xpplate matches 1 run playsound entity.zombie.infect block @a ~ ~ ~ 0.3 1.8
-
 execute if score *active.stored_xp _xpplate matches ..0 run return 0
 
 # clamp *x to *.stored_xp
