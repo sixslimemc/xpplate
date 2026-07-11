@@ -11,9 +11,9 @@
 # 1.
 #--------------------
 
-execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.left merge value {color:aqua, bold:false}
-execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.right merge value {color:aqua, bold:false}
-execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {bold:false, color:red}
-execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.left merge value {color:aqua, bold:false}
-execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.right merge value {color:aqua, bold:false}
-execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.center merge value {bold:false, color:green}
+execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.left merge value {color:dark_aqua, bold:false}
+execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.right merge value {color:dark_aqua, bold:false}
+execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.center merge value {bold:false, color:aqua}
+execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.left merge value {color:dark_aqua, bold:false}
+execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.right merge value {color:dark_aqua, bold:false}
+execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.center merge value {bold:false, color:aqua}
