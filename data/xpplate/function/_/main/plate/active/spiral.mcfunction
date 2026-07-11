@@ -7,5 +7,5 @@ execute if score *active.using _xpplate matches 1 unless score *active.xp_transf
 
 tp @s ~ ~ ~ ~5 ~
 
-particle instant_effect ^ ^0.02 ^0.64 0 0 0 0 1 normal
-particle instant_effect ^ ^0.02 ^-0.64 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^0.64 0 0 0 0 1 normal
+particle instant_effect{color:16777130} ^ ^0.02 ^-0.64 0 0 0 0 1 normal
