@@ -11,7 +11,7 @@ scoreboard players operation *x _xpplate = *active.rate _xpplate
 scoreboard players operation *x _xpplate *= *y _xpplate
 execute if score *x _xpplate > *active.stored_xp _xpplate run scoreboard players operation *x _xpplate = *active.stored_xp _xpplate
 
-scoreboard players operation *active.stored_xp _xpplate -= *x _xpplate
+scoreboard players operation *active.xp_transfer _xpplate -= *x _xpplate
 
 execute store result storage xpplate:_ x.macro.amount int 1 run scoreboard players get *x _xpplate
 function xpplate:_/main/plate/active/user/withdrawal.1 with storage xpplate:_ x.macro

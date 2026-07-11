@@ -3,7 +3,7 @@
 # ./etick
 #--------------------
 
-execute if score *active.using _xpplate matches 1 run return run function xpplate:_/main/plate/active/spiral_active
+execute if score *active.using _xpplate matches 1 unless score *active.xp_transfer _xpplate matches 0 run return run function xpplate:_/main/plate/active/spiral_active
 
 tp @s ~ ~ ~ ~4 ~
 
