@@ -4,6 +4,7 @@
 scoreboard objectives add _xpplate dummy
 scoreboard objectives add xpplate.stored_xp dummy
 scoreboard objectives add _xpplate.glitter_timer dummy
+scoreboard objectives add _xpplate.join minecraft.custom:minecraft.leave_game
 
 # DECLARE TAGS:
 # .xp_plate
