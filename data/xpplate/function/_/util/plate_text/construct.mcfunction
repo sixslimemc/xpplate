@@ -4,7 +4,7 @@
 # ./main
 #--------------------
 
-data modify storage six:in resolve.text set value [{text:"I ", color:white}, blanks, left, " ", center, " ", right, blanks, {text:" O", color:white}]
+data modify storage six:in resolve.text set value [{text:"In ", color:white}, blanks, left, " ", center, " ", right, blanks, {text:" Out", color:white}]
 data modify storage six:in resolve.text[1] set from storage xpplate:_ u.plate_text.blanks
 data modify storage six:in resolve.text[2] set from storage xpplate:_ u.plate_text.left
 data modify storage six:in resolve.text[4] set from storage xpplate:_ u.plate_text.center
