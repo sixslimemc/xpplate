@@ -7,7 +7,7 @@
 
 tp @s ~ ~ ~ ~-5 ~
 
-particle instant_effect{color:15660945} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
+# particle instant_effect{color:15660945} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
 
-# particle instant_effect{color:15660945} ^ ^0.02 ^0.64 0 0 0 0 1 normal
-# particle instant_effect{color:15660945} ^ ^0.02 ^-0.64 0 0 0 0 1 normal
+particle instant_effect{color:15660945} ^ ^0.02 ^0.64 0 0 0 0 1 normal
+particle instant_effect{color:15660945} ^ ^0.02 ^-0.64 0 0 0 0 1 normal
