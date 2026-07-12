@@ -12,7 +12,7 @@ execute if data storage xpplate:_ t.destroy.destroy_loot[0] run function xpplate
 
 # xp orb:
 scoreboard players operation *destroy.stored_xp _xpplate = @s xpplate.stored_xp
-execute if score *destroy.stored_xp _xpplate matches 1.. align xyz positioned ~0.5 ~0.3 ~0.5 summon experience_orb run function xpplate:_/main/plate/destroy/xp_orb
+execute if score *destroy.stored_xp _xpplate matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 summon experience_orb run function xpplate:_/main/plate/destroy/xp_orb
 
 scoreboard players reset *destroy.stored_xp
 
