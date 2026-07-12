@@ -30,6 +30,9 @@ data modify storage xpplate:_ u.plate_text.in_label set value {text:"IN ", color
 data modify storage xpplate:_ u.plate_text.out_label set value {text:" OUT", color:dark_gray}
 data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow, plain:true, bold:true}
 
+execute store result score *x _xpplate run data get storage xpplate:_/in plate_text.stored_xp
+execute if score *x _xpplate >= *max_stored _xpplate run data modify storage xpplate:_ u.plate_text.center.color set value red
+
 execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.out_label.color set value white
 execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.in_label.color set value white
 #DEV: looks better without blanks

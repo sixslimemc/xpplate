@@ -18,3 +18,6 @@ execute unless score *init _xpplate matches 1 run function xpplate:_/sc/init
 function xpplate:_/floormake/registry
 
 function xpplate:_/main/cache_config
+
+# constants
+scoreboard players set *max_stored _xpplate 32767
