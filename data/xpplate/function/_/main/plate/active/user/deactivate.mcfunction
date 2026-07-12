@@ -4,4 +4,4 @@
 #--------------------
 tag @s remove _xpplate.user
 
-title @s actionbar {score:{name:"*active.stored_xp", objective:"_xpplate"}, color:yellow, bold:true}
+title @s actionbar ""
