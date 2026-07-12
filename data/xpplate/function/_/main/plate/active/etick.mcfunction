@@ -11,6 +11,7 @@ execute if score *active.valid_user _xpplate matches 0 run return run function x
 
 scoreboard players operation @s xpplate.stored_xp += *active.xp_transfer _xpplate
 
+execute if score *config.particles.glitter _xpplate matches 1 run function xpplate:_/main/plate/active/glitter
 execute if score *config.particles.spiral _xpplate matches 1 run function xpplate:_/main/plate/active/spiral
 
 data remove storage xpplate:_ t.active
