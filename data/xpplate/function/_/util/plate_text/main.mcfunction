@@ -24,8 +24,8 @@ scoreboard players operation *plate_text.blanks _xpplate -= *plate_text.segments
 
 data modify storage xpplate:_ u.plate_text.blanks_left set value {text:"", color:dark_gray, extra:[""]}
 data modify storage xpplate:_ u.plate_text.blanks_right set value {text:"", color:dark_gray, extra:[""]}
-data modify storage xpplate:_ u.plate_text.left set value {text:"", color:green, extra:[]}
-data modify storage xpplate:_ u.plate_text.right set value {text:"", color:green, extra:[]}
+data modify storage xpplate:_ u.plate_text.left set value {text:"", color:dark_aqua, extra:[]}
+data modify storage xpplate:_ u.plate_text.right set value {text:"", color:dark_aqua, extra:[]}
 data modify storage xpplate:_ u.plate_text.in_label set value {text:"IN ", color:dark_gray}
 data modify storage xpplate:_ u.plate_text.out_label set value {text:" OUT", color:dark_gray}
 data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:yellow, plain:true, bold:true}
