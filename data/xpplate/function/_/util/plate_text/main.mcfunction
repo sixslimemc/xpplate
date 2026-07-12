@@ -27,7 +27,7 @@ data modify storage xpplate:_ u.plate_text.left set value {text:"", color:gray, 
 data modify storage xpplate:_ u.plate_text.right set value {text:"", color:gray, extra:[]}
 data modify storage xpplate:_ u.plate_text.in_label set value {text:"IN ", color:dark_gray}
 data modify storage xpplate:_ u.plate_text.out_label set value {text:" OUT", color:dark_gray}
-data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:aqua, plain:true}
+data modify storage xpplate:_ u.plate_text.center set value {storage:"xpplate:_/in", nbt:"plate_text.stored_xp", color:gold, plain:true}
 
 execute if score *plate_text.is_negative _xpplate matches 1 run data modify storage xpplate:_ u.plate_text.out_label.color set value white
 execute if score *plate_text.is_negative _xpplate matches 0 run data modify storage xpplate:_ u.plate_text.in_label.color set value white

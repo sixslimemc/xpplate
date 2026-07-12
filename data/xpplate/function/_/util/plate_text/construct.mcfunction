@@ -4,7 +4,7 @@
 # ./main
 #--------------------
 
-data modify storage six:in resolve.text set value [in_label, blanks, left, {text:" [", color:gold}, center, {text:"] ", color:gold}, right, blanks, out_label]
+data modify storage six:in resolve.text set value [in_label, blanks, left, {text:" [", color:yellow}, center, {text:"] ", color:yellow}, right, blanks, out_label]
 data modify storage six:in resolve.text[0] set from storage xpplate:_ u.plate_text.in_label
 data modify storage six:in resolve.text[1] set from storage xpplate:_ u.plate_text.blanks
 data modify storage six:in resolve.text[2] set from storage xpplate:_ u.plate_text.left
