@@ -6,7 +6,7 @@
 scoreboard players operation *x _xpplate = *active.segment_index _xpplate
 execute if score *x _xpplate matches 0.. run scoreboard players add *x _xpplate 1
 scoreboard players set *y _xpplate -1
-execute if score *x _xpplate matches ..-1 run scoreboard players operation *x _xpplate *= *y _xpplate
+execute if score *x _xpplate matches 1.. run scoreboard players operation *x _xpplate *= *y _xpplate
 scoreboard players set *y _xpplate 7
 scoreboard players operation *x _xpplate *= *y _xpplate
 execute store result storage xpplate:_ x.macro.rotate int 1 run scoreboard players get *x _xpplate
