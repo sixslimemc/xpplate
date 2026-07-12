@@ -2,7 +2,6 @@
 #--------------------
 # ../main
 #--------------------
-kill @s
 
 # deactivate:
 execute if entity @s[tag=xpplate.in_use] run function xpplate:_/main/plate/active/deactivate with entity @s data.xpplate.user
@@ -16,3 +15,5 @@ scoreboard players operation *destroy.stored_xp _xpplate = @s xpplate.stored_xp
 execute if score *destroy.stored_xp _xpplate matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 summon experience_orb run function xpplate:_/main/plate/destroy/xp_orb
 
 scoreboard players reset *destroy.stored_xp
+
+kill @s
