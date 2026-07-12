@@ -4,6 +4,9 @@
 #--------------------
 kill @s
 
+# deactivate:
+execute if entity @s[tag=xpplate.in_use] run function xpplate:_/main/plate/active/deactivate with entity @s data.xpplate.user
+
 # spawn destroy loot:
 data modify storage xpplate:_ t.destroy.destroy_loot set from entity @s data.xpplate.destroy_loot
 execute if data storage xpplate:_ t.destroy.destroy_loot[0] run function xpplate:_/main/plate/destroy/destroy_loot/each
