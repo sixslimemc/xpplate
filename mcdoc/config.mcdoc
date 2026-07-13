@@ -6,8 +6,8 @@ dispatch minecraft:storage[xpplate:config] to struct Config {
     },
     particles: struct ParticlesConfig {
         create: boolean,
-        transfer_spiral: boolean,
-        glitter: boolean,
+        active: boolean,
+        inactive: boolean,
     },
     // sum(x => x.threshold_size) must equal 90
     transfer_rates: [struct TransferRateSegment {

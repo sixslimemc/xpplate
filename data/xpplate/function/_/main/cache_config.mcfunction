@@ -3,8 +3,8 @@
 # _/sc/load
 #--------------------
 
-execute store success score *config.particles.glitter _xpplate if data storage xpplate:config particles{glitter:true}
-execute store success score *config.particles.spiral _xpplate if data storage xpplate:config particles{transfer_spiral:true}
+execute store success score *config.particles.inactive _xpplate if data storage xpplate:config particles{inactive:true}
+execute store success score *config.particles.active _xpplate if data storage xpplate:config particles{active:true}
 execute store success score *config.particles.create _xpplate if data storage xpplate:config particles{create:true}
 
 execute store success score *config.sounds.step _xpplate if data storage xpplate:config sounds{step_on_off:true}
