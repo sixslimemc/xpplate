@@ -11,14 +11,14 @@ scoreboard objectives add _xpplate.join minecraft.custom:minecraft.leave_game
 # .in_use
 # .ignore
 
-# DEBUG
-scoreboard players reset *init _xpplate
-
 execute unless score *init _xpplate matches 1 run function xpplate:_/sc/init
 
 function xpplate:_/floormake/registry
 
 function xpplate:_/main/cache_config
 
-# constants
+# constants:
 scoreboard players set *max_stored _xpplate 32767
+
+# re-enable:
+execute if score *disabled _xpplate matches 1 run function xpplate:_/sc/enable
