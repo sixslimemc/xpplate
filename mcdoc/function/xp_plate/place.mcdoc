@@ -1,0 +1,9 @@
+// places an xp plate at this location.
+
+struct In {}
+struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    AlreadyHere = 0,
+}

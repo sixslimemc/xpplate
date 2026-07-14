@@ -1,0 +1,9 @@
+// destroys the xp plate at this location without replacing the block (keeps pressure plate).
+
+struct In {}
+struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    NoneExists = 0,
+}
