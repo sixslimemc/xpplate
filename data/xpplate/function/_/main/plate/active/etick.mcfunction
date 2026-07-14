@@ -11,11 +11,11 @@ execute if score *active.valid_user _xpplate matches 0 run return run function x
 
 scoreboard players operation @s xpplate.stored_xp += *active.xp_transfer _xpplate
 
-execute if score *active.xp_transfer _xpplate matches ..-1 run particle instant_effect{color:13434807} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
-execute if score *active.xp_transfer _xpplate matches 1.. run particle instant_effect{color:14277081} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
-# execute if score *active.xp_transfer _xpplate matches 1.. run particle instant_effect{color:12163497} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
+execute if score *active.xp_transfer _xpplate matches ..-1 if score *config.particles.transfer _xpplate matches 1 run particle instant_effect{color:13434807} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
+execute if score *active.xp_transfer _xpplate matches 1.. if score *config.particles.transfer _xpplate matches 1 run particle instant_effect{color:14277081} ~ ~0.03 ~ 0.2 0 0.2 0 1 normal
 
-execute if score *config.particles.active _xpplate matches 1 if score *active.xp_transfer _xpplate matches 0 run function xpplate:_/main/plate/active/glitter
+execute if score *config.particles.transfer _xpplate matches 1 if score *config.particles.active _xpplate matches 1 if score *active.xp_transfer _xpplate matches 0 run function xpplate:_/main/plate/active/glitter
+execute if score *config.particles.transfer _xpplate matches 0 if score *config.particles.active _xpplate matches 1 run function xpplate:_/main/plate/active/glitter
 
 data remove storage xpplate:_ t.active
 scoreboard players reset *active.using _xpplate

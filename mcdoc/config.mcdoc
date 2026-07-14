@@ -8,6 +8,7 @@ dispatch minecraft:storage[xpplate:config] to struct Config {
         create: boolean,
         active: boolean,
         inactive: boolean,
+        transfer: boolean,
     },
     // sum(x => x.threshold_size) must equal 90
     transfer_rates: [struct TransferRateSegment {

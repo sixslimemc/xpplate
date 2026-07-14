@@ -6,6 +6,7 @@
 execute store success score *config.particles.inactive _xpplate if data storage xpplate:config particles{inactive:true}
 execute store success score *config.particles.active _xpplate if data storage xpplate:config particles{active:true}
 execute store success score *config.particles.create _xpplate if data storage xpplate:config particles{create:true}
+execute store success score *config.particles.transfer _xpplate if data storage xpplate:config particles{transfer:true}
 
 execute store success score *config.sounds.step _xpplate if data storage xpplate:config sounds{step_on_off:true}
 execute store success score *config.sounds.create _xpplate if data storage xpplate:config sounds{create:true}
