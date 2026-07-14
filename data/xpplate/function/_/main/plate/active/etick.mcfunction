@@ -3,8 +3,6 @@
 # ../etick
 #--------------------
 
-setblock ~ ~ ~ light_weighted_pressure_plate[power=1]
-
 scoreboard players set *active.valid_user _xpplate 0
 scoreboard players set *active.xp_transfer _xpplate 0
 scoreboard players operation *active.stored_xp _xpplate = @s xpplate.stored_xp
