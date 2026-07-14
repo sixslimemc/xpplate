@@ -8,3 +8,5 @@ data modify storage xpplate:config sounds set value {create:true, step_on_off:tr
 data modify storage xpplate:config transfer_rates set value [{rate:2, threshold_size:30}]
 data modify storage xpplate:config transfer_rates append value {rate:5, threshold_size:30}
 data modify storage xpplate:config transfer_rates append value {rate:10, threshold_size:30}
+
+data modify storage xpplate:data default_destroy_loot set value [{id:"minecraft:chest", count:1}, {id:"minecraft:emerald", count:1}]

@@ -1,4 +1,6 @@
 
 dispatch minecraft:storage[xpplate:data] to struct Data {
-
+    // only used as the default input for `xpplate:xp_plate/make`
+    // mutable
+    default_destroy_loot: [::java::world::item::ItemStack]
 }

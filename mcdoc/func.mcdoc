@@ -1,10 +1,10 @@
 
 dispatch minecraft:storage[xpplate:in] to struct In {
-    place: super::function::xp_plate::place::In,
-    destroy: super::function::xp_plate::destroy::In,
+    make: super::function::xp_plate::make::In,
+    unmake: super::function::xp_plate::unmake::In,
 }
 
 dispatch minecraft:storage[xpplate:out] to struct Out {
-    place: super::function::xp_plate::place::Out,
-    destroy: super::function::xp_plate::destroy::Out,
+    make: super::function::xp_plate::make::Out,
+    unmake: super::function::xp_plate::unmake::Out,
 }

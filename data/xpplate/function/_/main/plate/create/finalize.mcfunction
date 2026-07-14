@@ -11,7 +11,6 @@ execute if score *config.sounds.create _xpplate matches 1 run playsound entity.z
 
 execute if score *config.particles.create _xpplate matches 1 run particle dust{color:[0.4, 1, 0.4], scale:1} ~ ~.04 ~ 0.2 0 0.2 1 8 normal
 
-
-data modify entity @s data.xpplate.destroy_loot append from storage floormake:api on_catalyst.ingredient_items[][]
+data modify entity @s data.xpplate.destroy_loot set from storage xpplate:_ t.finalize.destroy_loot
 
 data remove storage xpplate:_ t.finalize

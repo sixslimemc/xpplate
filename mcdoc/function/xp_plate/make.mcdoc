@@ -1,0 +1,13 @@
+// places an xp plate at this location; must already be a pressure plate placed.
+
+struct In {
+    // defaults to a chest and emerald.
+    destroy_loot?: [::java::world::item::ItemStack]
+}
+struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    NoPressurePlate = -1,
+    AlreadyExists = -2,
+}
